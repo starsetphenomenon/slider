@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    background-color: rgb(91, 153, 74);
+}
+
+.container {
+    display: block;
+    width: 70vw;
+    margin: 30px 15vw;
+    user-select: none;
+}
+
+.title {
+    letter-spacing: 0.5rem;
+    word-spacing: 1rem;
+    text-align: center;
+    width: 100%;
+    font-size: 42px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding: 15px 0;
+    border-radius: 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.slider {
+    margin: 30px auto;
+    position: relative;
+    width: 100%;
+    height: 720px;
+    border-radius: 4px;
+    box-shadow: rgba(255, 255, 255, 0.55) 0px 10px 25px;
+    padding: 4px;
+    /*color line width around slider*/
+    background-color: rgba(129, 232, 250, 0.6);
+    /*color around slider*/
+    background-clip: padding-box;
+}
+
+.slides__wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    user-select: none;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.prev-CSS {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.next-CSS {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.arrow-CSS {
+    /*add this calss to nav buttons if you want to use only CSS */
+    border: solid rgb(243, 243, 243);
+    /*navigation buttons color*/
+    border-width: 0 6px 6px 0;
+    padding: 3px;
+    z-index: 10;
+    height: 40px;
+    /*navigation buttons size*/
+    width: 40px;
+    /*navigation buttons size*/
+    cursor: pointer;
+    border-radius: 6px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.prev {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.arrow {
+    /*nav buttons with SVG */
+    height: 80px;
+    width: 40px;
+    /*navigation buttons size*/
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.arrow svg {
+    height: 100%;
+    width: 100%;
+    transform: scale(2);
+}
+
+.arr-up {
+    fill: #de8b53;
+    /* SVG arrow color */
+}
+
+.arr-down {
+    fill: #e25b08;
+    /* SVG arrow color */
+}
+
+@keyframes next {
+    0% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform-origin: left;
+        transform: translateX(-10%) scale(0.9, 1.1);
+    }
+
+    100% {
+        transform: translateX(0%) scale(1);
+    }
+}
+
+@keyframes prev {
+    0% {
+        transform: translateX(0%);
+    }
+
+    30% {
+        transform-origin: right;
+        transform: translateX(10%) scale(0.9, 1.1);
+    }
+
+    100% {
+        transform: translateX(-100%) scale(1);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.arrow svg:hover {
+    transform: scale(2.4);
+}
+
+@media (max-width: 1200px) {
+    .slider {
+        height: 576px;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider {
+        height: 520px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .slider {
+        padding: 4px;
+        border-radius: 4px;
+    }
+
+    .slider {
+        height: 320px;
+    }
+
+    @keyframes next {
+        0% {
+            transform: translateX(100%);
+        }
+
+        50% {
+            transform-origin: left;
+            transform: translateX(-10%) scale(1, 1);
+        }
+
+        100% {
+            transform: translateX(0%) scale(1);
+        }
+    }
+
+    @keyframes prev {
+        0% {
+            transform: translateX(0%);
+        }
+
+        30% {
+            transform-origin: right;
+            transform: translateX(10%) scale(1, 1);
+        }
+
+        100% {
+            transform: translateX(-100%) scale(1);
+        }
+    }
+}
+
+@media (max-width: 425px) {
+
+    .slider {
+        height: 280px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .slider {
+        height: 180px;
+    }
+}
