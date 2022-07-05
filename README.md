@@ -1,41 +1,35 @@
 
-# Custom Gallery Vanilla JS
-
-## Advice
-
-Maximum amout of images is around 24. 
-Use slider version for more images!
+# Vanilla JS Responsive Slider
 
 ## Usage
 
-Add DIV with ID "gallery" and CLASS "gallery__wrapper"
-to your website 
+Copy the block with ID and CLASS "slider"
 
-Add your images to the block: 
-put your image into the DIV with class "gallery__item"
+
+Add your images to the block "slides__wrapper": 
+put your image into the DIV with class "slide"
  
 ## CSS
 
- change (.gallery__wrapper) background to display image by default
- 
- Example: background: url("images/3.jpg") no-repeat center center; 
+Change colors and animations
 
+## JS
+
+Change animation speed
 
 ## Features
 
 * Responsive (mobile friendly)
 
-* Customizable
+* Customizable (speed, animation, design, colors and etc.)
 
 * Easy to use
-
-* automatically remove images if amount is more than 24
 
 
 ## Demo
 
 * Full view
-![Logo](https://github.com/starsetphenomenon/custom-gallery/blob/main/images/demo1.png?raw=true)
+![Logo](https://github.com/starsetphenomenon/slider/blob/main/images/demo1.png?raw=true)
 * Mobile version
-![Logo](https://github.com/starsetphenomenon/custom-gallery/blob/main/images/demo2.png?raw=true)
+![Logo](https://github.com/starsetphenomenon/slider/blob/main/images/demo2.png?raw=true)
 
