@@ -20,7 +20,9 @@ Change animation speed or type
 ## Animations (4 type)
 
 In JS file change "animatePrev" and "animateNext" to preferred animation.
+
 Example: 
+
 animatePrev = 'prev2'
 animateNext = 'next2'
 
