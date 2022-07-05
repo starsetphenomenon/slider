@@ -130,7 +130,7 @@ body {
     /* SVG arrow color */
 }
 
-@keyframes next {
+@keyframes next1 {
     0% {
         transform: translateX(100%);
     }
@@ -145,7 +145,7 @@ body {
     }
 }
 
-@keyframes prev {
+@keyframes prev1 {
     0% {
         transform: translateX(0%);
     }
@@ -157,6 +157,89 @@ body {
 
     100% {
         transform: translateX(-100%) scale(1);
+    }
+}
+
+@keyframes next2 {
+    0% {
+        transform-origin: top right;
+        transform: rotateZ(90deg);
+        transform-style: preserve-3d;
+    }
+
+    100% {
+        transform-origin: top right;
+        transform: rotateZ(0deg);
+        transform-style: preserve-3d;
+    }
+}
+
+@keyframes prev2 {
+    0% {
+        transform-origin: bottom left;
+        transform: rotateZ(0deg);
+        transform-style: preserve-3d;
+    }
+
+    100% {
+        transform-origin: bottom left;
+        transform: rotateZ(90deg);
+        transform-style: preserve-3d;
+    }
+}
+
+@keyframes next3 {
+    0% {
+        filter: grayscale(1);
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+        filter: grayscale(1);
+    }
+
+    100% {
+        filter: grayscale(0);
+        opacity: 1;
+    }
+}
+
+@keyframes prev3 {
+    0% {
+        filter: grayscale(0);
+        opacity: 1;
+    }
+
+    75% {
+        filter: grayscale(1);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes next4 {
+    0% {
+        transform-origin: top right;
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes prev4 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform-origin: bottom left;
+        transform: scale(0);
     }
 }
 
@@ -194,7 +277,7 @@ body {
         height: 320px;
     }
 
-    @keyframes next {
+    @keyframes next1 {
         0% {
             transform: translateX(100%);
         }
@@ -209,7 +292,7 @@ body {
         }
     }
 
-    @keyframes prev {
+    @keyframes prev1 {
         0% {
             transform: translateX(0%);
         }
