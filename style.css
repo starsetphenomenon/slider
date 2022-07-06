@@ -1,4 +1,5 @@
 body {
+    padding: 0;
     margin: 0;
     background-color: rgb(91, 153, 74);
 }
@@ -6,7 +7,7 @@ body {
 .container {
     display: block;
     width: 70vw;
-    margin: 30px 15vw;
+    margin: 30px auto;
     user-select: none;
 }
 
