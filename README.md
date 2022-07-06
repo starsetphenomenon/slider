@@ -1,5 +1,5 @@
 
-# Vanilla JS Responsive Slider
+# Vanilla JS Responsive Slider (SWIPE on touch screens)
 
 ## Usage
 
@@ -29,6 +29,8 @@ animateNext = 'next2'
 ## Features
 
 * Responsive (mobile friendly)
+
+* Swipe option on touch screens
 
 * Customizable (speed, animation, design, colors and etc.)
 
